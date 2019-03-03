@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15D17032D7B6FD96A64B1537 /* Pods_MerqueoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B7EFA413FA26AA0765D299 /* Pods_MerqueoTestTests.framework */; };
+		4FE888CF3F45753FD416B166 /* Pods_MerqueoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EDD5B08B7DB5F19CA35AF /* Pods_MerqueoTest.framework */; };
+		C9BB9E67222C390C00E7F52B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB9E66222C390C00E7F52B /* R.generated.swift */; };
+		C9BB9E6B222C39ED00E7F52B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB9E6A222C39ED00E7F52B /* Api.swift */; };
+		C9BB9E6F222C3A5500E7F52B /* TheMovieDBTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB9E6E222C3A5500E7F52B /* TheMovieDBTarget.swift */; };
 		C9F92AEE222C2B180013D9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F92AED222C2B180013D9C0 /* AppDelegate.swift */; };
-		C9F92AF0222C2B180013D9C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F92AEF222C2B180013D9C0 /* ViewController.swift */; };
-		C9F92AF3222C2B180013D9C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F92AF1222C2B180013D9C0 /* Main.storyboard */; };
 		C9F92AF5222C2B1A0013D9C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F92AF4222C2B1A0013D9C0 /* Assets.xcassets */; };
 		C9F92AF8222C2B1A0013D9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F92AF6222C2B1A0013D9C0 /* LaunchScreen.storyboard */; };
 		C9F92B03222C2B1A0013D9C0 /* MerqueoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F92B02222C2B1A0013D9C0 /* MerqueoTestTests.swift */; };
 		C9F92B0E222C2B1A0013D9C0 /* MerqueoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F92B0D222C2B1A0013D9C0 /* MerqueoTestUITests.swift */; };
+		E4D26D9E8CFDA63207494CCE /* Pods_MerqueoTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C655FA15A096E9DC8A9E3D8 /* Pods_MerqueoTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160C92327C7068C58FBEBF64 /* Pods-MerqueoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTest.debug.xcconfig"; path = "Target Support Files/Pods-MerqueoTest/Pods-MerqueoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8DFDB0E11525737CEEEA45 /* Pods-MerqueoTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTestUITests.release.xcconfig"; path = "Target Support Files/Pods-MerqueoTestUITests/Pods-MerqueoTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C655FA15A096E9DC8A9E3D8 /* Pods_MerqueoTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MerqueoTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF1BF639C73A60F9500C7A4 /* Pods-MerqueoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTestTests.release.xcconfig"; path = "Target Support Files/Pods-MerqueoTestTests/Pods-MerqueoTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF2A149C23BD7906EBE792CB /* Pods-MerqueoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTest.release.xcconfig"; path = "Target Support Files/Pods-MerqueoTest/Pods-MerqueoTest.release.xcconfig"; sourceTree = "<group>"; };
+		C9BB9E66222C390C00E7F52B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C9BB9E6A222C39ED00E7F52B /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		C9BB9E6E222C3A5500E7F52B /* TheMovieDBTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBTarget.swift; sourceTree = "<group>"; };
 		C9F92AEA222C2B180013D9C0 /* MerqueoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerqueoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F92AED222C2B180013D9C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9F92AEF222C2B180013D9C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9F92AF2222C2B180013D9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9F92AF4222C2B1A0013D9C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9F92AF7222C2B1A0013D9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9F92AF9222C2B1A0013D9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		C9F92B09222C2B1A0013D9C0 /* MerqueoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerqueoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F92B0D222C2B1A0013D9C0 /* MerqueoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerqueoTestUITests.swift; sourceTree = "<group>"; };
 		C9F92B0F222C2B1A0013D9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA62A389B11E81FB01A0DD1 /* Pods-MerqueoTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-MerqueoTestUITests/Pods-MerqueoTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC7EDD5B08B7DB5F19CA35AF /* Pods_MerqueoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MerqueoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95009C9C7F5E2992BFFA0C5 /* Pods-MerqueoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerqueoTestTests.debug.xcconfig"; path = "Target Support Files/Pods-MerqueoTestTests/Pods-MerqueoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4B7EFA413FA26AA0765D299 /* Pods_MerqueoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MerqueoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE888CF3F45753FD416B166 /* Pods_MerqueoTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D17032D7B6FD96A64B1537 /* Pods_MerqueoTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,103 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D26D9E8CFDA63207494CCE /* Pods_MerqueoTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0351136E53141A070675047F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EDD5B08B7DB5F19CA35AF /* Pods_MerqueoTest.framework */,
+				F4B7EFA413FA26AA0765D299 /* Pods_MerqueoTestTests.framework */,
+				9C655FA15A096E9DC8A9E3D8 /* Pods_MerqueoTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B19BC8FAE9124C92078EAF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				160C92327C7068C58FBEBF64 /* Pods-MerqueoTest.debug.xcconfig */,
+				BF2A149C23BD7906EBE792CB /* Pods-MerqueoTest.release.xcconfig */,
+				E95009C9C7F5E2992BFFA0C5 /* Pods-MerqueoTestTests.debug.xcconfig */,
+				9DF1BF639C73A60F9500C7A4 /* Pods-MerqueoTestTests.release.xcconfig */,
+				CBA62A389B11E81FB01A0DD1 /* Pods-MerqueoTestUITests.debug.xcconfig */,
+				5C8DFDB0E11525737CEEEA45 /* Pods-MerqueoTestUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9BB9E63222C373D00E7F52B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C9F92AF6222C2B1A0013D9C0 /* LaunchScreen.storyboard */,
+				C9F92AF9222C2B1A0013D9C0 /* Info.plist */,
+				C9F92AED222C2B180013D9C0 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C9BB9E65222C383F00E7F52B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB9E66222C390C00E7F52B /* R.generated.swift */,
+				C9F92AF4222C2B1A0013D9C0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9BB9E68222C398C00E7F52B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB9E70222C487A00E7F52B /* Movie */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C9BB9E69222C39D000E7F52B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB9E6D222C3A2A00E7F52B /* LocalStorage */,
+				C9BB9E6C222C3A0100E7F52B /* HttpServices */,
+				C9BB9E6A222C39ED00E7F52B /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C9BB9E6C222C3A0100E7F52B /* HttpServices */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB9E6E222C3A5500E7F52B /* TheMovieDBTarget.swift */,
+			);
+			path = HttpServices;
+			sourceTree = "<group>";
+		};
+		C9BB9E6D222C3A2A00E7F52B /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		C9BB9E70222C487A00E7F52B /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB9E71222C4B8800E7F52B /* New Group */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		C9BB9E71222C4B8800E7F52B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		C9F92AE1222C2B180013D9C0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +188,8 @@
 				C9F92B01222C2B1A0013D9C0 /* MerqueoTestTests */,
 				C9F92B0C222C2B1A0013D9C0 /* MerqueoTestUITests */,
 				C9F92AEB222C2B180013D9C0 /* Products */,
+				4B19BC8FAE9124C92078EAF1 /* Pods */,
+				0351136E53141A070675047F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +206,10 @@
 		C9F92AEC222C2B180013D9C0 /* MerqueoTest */ = {
 			isa = PBXGroup;
 			children = (
-				C9F92AED222C2B180013D9C0 /* AppDelegate.swift */,
-				C9F92AEF222C2B180013D9C0 /* ViewController.swift */,
-				C9F92AF1222C2B180013D9C0 /* Main.storyboard */,
-				C9F92AF4222C2B1A0013D9C0 /* Assets.xcassets */,
-				C9F92AF6222C2B1A0013D9C0 /* LaunchScreen.storyboard */,
-				C9F92AF9222C2B1A0013D9C0 /* Info.plist */,
+				C9BB9E69222C39D000E7F52B /* Api */,
+				C9BB9E68222C398C00E7F52B /* Modules */,
+				C9BB9E65222C383F00E7F52B /* Resources */,
+				C9BB9E63222C373D00E7F52B /* App */,
 			);
 			path = MerqueoTest;
 			sourceTree = "<group>";
@@ -132,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9F92B12222C2B1A0013D9C0 /* Build configuration list for PBXNativeTarget "MerqueoTest" */;
 			buildPhases = (
+				B66799C9550FDF180ED6C456 /* [CP] Check Pods Manifest.lock */,
+				C9BB9E64222C37A900E7F52B /* ShellScript */,
 				C9F92AE6222C2B180013D9C0 /* Sources */,
 				C9F92AE7222C2B180013D9C0 /* Frameworks */,
 				C9F92AE8222C2B180013D9C0 /* Resources */,
+				E4E953180CA161DEF5A57713 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9F92B15222C2B1A0013D9C0 /* Build configuration list for PBXNativeTarget "MerqueoTestTests" */;
 			buildPhases = (
+				7CD0B11F1B0E562FC8B7D765 /* [CP] Check Pods Manifest.lock */,
 				C9F92AFA222C2B1A0013D9C0 /* Sources */,
 				C9F92AFB222C2B1A0013D9C0 /* Frameworks */,
 				C9F92AFC222C2B1A0013D9C0 /* Resources */,
@@ -167,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9F92B18222C2B1A0013D9C0 /* Build configuration list for PBXNativeTarget "MerqueoTestUITests" */;
 			buildPhases = (
+				76409287902CB5D057E82202 /* [CP] Check Pods Manifest.lock */,
 				C9F92B05222C2B1A0013D9C0 /* Sources */,
 				C9F92B06222C2B1A0013D9C0 /* Frameworks */,
 				C9F92B07222C2B1A0013D9C0 /* Resources */,
@@ -231,7 +343,6 @@
 			files = (
 				C9F92AF8222C2B1A0013D9C0 /* LaunchScreen.storyboard in Resources */,
 				C9F92AF5222C2B1A0013D9C0 /* Assets.xcassets in Resources */,
-				C9F92AF3222C2B180013D9C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +362,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76409287902CB5D057E82202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MerqueoTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD0B11F1B0E562FC8B7D765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MerqueoTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66799C9550FDF180ED6C456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MerqueoTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9BB9E64222C37A900E7F52B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/MerqueoTest/Resources/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/MerqueoTest/Resources/R.generated.swift\"\n";
+		};
+		E4E953180CA161DEF5A57713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MerqueoTest/Pods-MerqueoTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MerqueoTest/Pods-MerqueoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9F92AE6222C2B180013D9C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F92AF0222C2B180013D9C0 /* ViewController.swift in Sources */,
+				C9BB9E6B222C39ED00E7F52B /* Api.swift in Sources */,
 				C9F92AEE222C2B180013D9C0 /* AppDelegate.swift in Sources */,
+				C9BB9E67222C390C00E7F52B /* R.generated.swift in Sources */,
+				C9BB9E6F222C3A5500E7F52B /* TheMovieDBTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +532,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C9F92AF1222C2B180013D9C0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F92AF2222C2B180013D9C0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9F92AF6222C2B1A0013D9C0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,10 +661,11 @@
 		};
 		C9F92B13222C2B1A0013D9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160C92327C7068C58FBEBF64 /* Pods-MerqueoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MerqueoTest/Info.plist;
+				INFOPLIST_FILE = MerqueoTest/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +679,11 @@
 		};
 		C9F92B14222C2B1A0013D9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2A149C23BD7906EBE792CB /* Pods-MerqueoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MerqueoTest/Info.plist;
+				INFOPLIST_FILE = MerqueoTest/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +697,7 @@
 		};
 		C9F92B16222C2B1A0013D9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95009C9C7F5E2992BFFA0C5 /* Pods-MerqueoTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +718,7 @@
 		};
 		C9F92B17222C2B1A0013D9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF1BF639C73A60F9500C7A4 /* Pods-MerqueoTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +739,7 @@
 		};
 		C9F92B19222C2B1A0013D9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA62A389B11E81FB01A0DD1 /* Pods-MerqueoTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +759,7 @@
 		};
 		C9F92B1A222C2B1A0013D9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8DFDB0E11525737CEEEA45 /* Pods-MerqueoTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
