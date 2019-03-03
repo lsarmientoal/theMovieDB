@@ -1,5 +1,5 @@
 //
-//  Api.swift
+//  BaseRouterType.swift
 //  MerqueoTest
 //
 //  Created by Laura Sarmiento on 3/3/19.
@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-struct Api {
+protocol BaseRouterType: class {
     
-    static var httpServices: HttpServicesType = HttpServices()
+    static func createModule<ViewType: BaseViewController>() -> ViewType
 }

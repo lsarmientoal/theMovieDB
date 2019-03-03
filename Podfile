@@ -11,6 +11,8 @@ target 'MerqueoTest' do
   pod 'R.swift'
   pod 'Moya/RxSwift'
   pod 'Moya-ObjectMapper/RxSwift'
+  pod 'RxDataSources'
+  pod 'Kingfisher'
 
   target 'MerqueoTestTests' do
     inherit! :search_paths

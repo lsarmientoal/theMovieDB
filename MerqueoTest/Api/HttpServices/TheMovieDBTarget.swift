@@ -24,10 +24,10 @@ enum TheMovieDBTarget: TargetType {
     
     var path: String {
         switch self {
-        case .movieList: return "/discover/movie?api_key=\(apiKey)"
-        case .movieDetail(let movieId): return "/movie/\(movieId)?api_key=\(apiKey)"
-        case .movieCredit(let movieId): return "/movie/\(movieId)/credits?api_key=\(apiKey)"
-        case .configuration : return "/configuration?api_key=\(apiKey)"
+        case .movieList: return "/discover/movie"
+        case .movieDetail(let movieId): return "/movie/\(movieId)"
+        case .movieCredit(let movieId): return "/movie/\(movieId)/credits"
+        case .configuration : return "/configuration"
         }
     }
     
@@ -45,7 +45,10 @@ enum TheMovieDBTarget: TargetType {
     var task: Task {
         switch self {
         case .movieList, .movieDetail, .movieCredit, .configuration:
-            return .requestPlain
+            return .requestParameters(
+                parameters: ["api_key": apiKey],
+                encoding: URLEncoding.default
+            )
         }
     }
     
