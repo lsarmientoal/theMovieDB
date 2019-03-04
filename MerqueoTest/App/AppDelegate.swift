@@ -18,10 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = MovieRouter.createModule()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.view.tintColor = .white
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
         
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor.white
+        ]
+        
+        Configuration.shared.loadMovieConfiguration()
         return true
     }
 }

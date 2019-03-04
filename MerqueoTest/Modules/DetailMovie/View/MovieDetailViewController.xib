@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="MerqueoTest" customModuleProvider="target">
+            <connections>
+                <outlet property="averageLabel" destination="jLN-2z-C66" id="7E6-LV-lqn"/>
+                <outlet property="coverImageView" destination="dkJ-Wh-edl" id="qgQ-sH-JUP"/>
+                <outlet property="movieTitleLabel" destination="w5q-Ew-Fjk" id="Dhj-1L-VRs"/>
+                <outlet property="synopsisLabel" destination="Tug-LV-cde" id="nPO-iB-7sV"/>
+                <outlet property="trailerButton" destination="tc9-uo-26b" id="K0h-oS-Rpi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Cj9-tX-J97"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOM-lk-5zD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dkJ-Wh-edl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alita: Ángel de Combate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5q-Ew-Fjk">
+                            <rect key="frame" x="30" y="149" width="315" height="29"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.035294117647058823" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="dkJ-Wh-edl" firstAttribute="leading" secondItem="LOM-lk-5zD" secondAttribute="leading" id="1sO-D9-6Ul"/>
+                        <constraint firstAttribute="bottom" secondItem="dkJ-Wh-edl" secondAttribute="bottom" id="2lR-jL-NJ1"/>
+                        <constraint firstItem="dkJ-Wh-edl" firstAttribute="top" secondItem="LOM-lk-5zD" secondAttribute="top" id="JdA-za-0ar"/>
+                        <constraint firstAttribute="trailing" secondItem="w5q-Ew-Fjk" secondAttribute="trailing" constant="30" id="NZd-cq-nDv"/>
+                        <constraint firstItem="w5q-Ew-Fjk" firstAttribute="leading" secondItem="LOM-lk-5zD" secondAttribute="leading" constant="30" id="TLI-NJ-o4N"/>
+                        <constraint firstAttribute="trailing" secondItem="dkJ-Wh-edl" secondAttribute="trailing" id="Ynn-BD-YgT"/>
+                        <constraint firstAttribute="bottom" secondItem="w5q-Ew-Fjk" secondAttribute="bottom" constant="22" id="gqx-cI-uWi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJ3-Lp-Z6Z">
+                    <rect key="frame" x="0.0" y="199" width="375" height="468"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yem-qT-1bB">
+                            <rect key="frame" x="35" y="34" width="80" height="33.5"/>
+                            <string key="text">Puntuación 
+de usuario:</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLN-2z-C66">
+                            <rect key="frame" x="135" y="35" width="53" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <color key="textColor" red="0.21960784310000001" green="0.82352941180000006" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-LV-cde">
+                            <rect key="frame" x="35" y="184" width="305" height="98"/>
+                            <string key="text">Ido, un compasivo médico de ciborgs, encuentra a Alita abandonada en el desguace de Iron City. Cuando Alita despierta, no sabe quién es, ni reconoce el mundo en el que se encuentra, todo es nuevo para ella. Ido intentará…</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipnosis " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kep-4t-G9v">
+                            <rect key="frame" x="35" y="113.5" width="269" height="21.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-uo-26b">
+                            <rect key="frame" x="249" y="35" width="96" height="30"/>
+                            <color key="backgroundColor" red="0.21960784310000001" green="0.82352941180000006" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Ksi-eI-Lvs"/>
+                                <constraint firstAttribute="width" constant="96" id="jbh-lq-Gyj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="   Trailer" image="movieTrailerplayBtn"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.035294117647058823" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Tug-LV-cde" secondAttribute="trailing" constant="35" id="11i-Eq-CS5"/>
+                        <constraint firstAttribute="trailing" secondItem="tc9-uo-26b" secondAttribute="trailing" constant="30" id="2fg-FQ-5sJ"/>
+                        <constraint firstItem="kep-4t-G9v" firstAttribute="top" secondItem="yem-qT-1bB" secondAttribute="bottom" constant="46" id="3cR-Af-ZJS"/>
+                        <constraint firstItem="Tug-LV-cde" firstAttribute="leading" secondItem="MJ3-Lp-Z6Z" secondAttribute="leading" constant="35" id="MfX-uG-hFu"/>
+                        <constraint firstItem="tc9-uo-26b" firstAttribute="centerY" secondItem="jLN-2z-C66" secondAttribute="centerY" id="Mt2-YH-4dG"/>
+                        <constraint firstItem="jLN-2z-C66" firstAttribute="leading" secondItem="yem-qT-1bB" secondAttribute="trailing" constant="20" id="ZkA-Kw-AEY"/>
+                        <constraint firstAttribute="trailing" secondItem="kep-4t-G9v" secondAttribute="trailing" constant="71" id="cae-Ef-wq1"/>
+                        <constraint firstItem="jLN-2z-C66" firstAttribute="top" secondItem="MJ3-Lp-Z6Z" secondAttribute="top" constant="35" id="gfp-bI-vGt"/>
+                        <constraint firstItem="yem-qT-1bB" firstAttribute="leading" secondItem="MJ3-Lp-Z6Z" secondAttribute="leading" constant="35" id="lsl-AC-qSB"/>
+                        <constraint firstItem="kep-4t-G9v" firstAttribute="leading" secondItem="MJ3-Lp-Z6Z" secondAttribute="leading" constant="35" id="ptC-8p-pIY"/>
+                        <constraint firstItem="yem-qT-1bB" firstAttribute="top" secondItem="MJ3-Lp-Z6Z" secondAttribute="top" constant="34" id="qiV-OS-mdD"/>
+                        <constraint firstItem="Tug-LV-cde" firstAttribute="top" secondItem="MJ3-Lp-Z6Z" secondAttribute="top" constant="184" id="x7k-80-sg8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LOM-lk-5zD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0Jc-V8-BEO"/>
+                <constraint firstItem="MJ3-Lp-Z6Z" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0r3-xH-WnY"/>
+                <constraint firstItem="LOM-lk-5zD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ErX-WJ-BIj"/>
+                <constraint firstItem="MJ3-Lp-Z6Z" firstAttribute="top" secondItem="LOM-lk-5zD" secondAttribute="bottom" constant="-1" id="LwR-sP-7kp"/>
+                <constraint firstItem="MJ3-Lp-Z6Z" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UEW-5E-hzc"/>
+                <constraint firstItem="LOM-lk-5zD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="b0t-47-Gv6"/>
+                <constraint firstItem="MJ3-Lp-Z6Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bNc-3W-Qzz"/>
+                <constraint firstItem="LOM-lk-5zD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vfD-PI-4dz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="movieTrailerplayBtn" width="16" height="12"/>
+    </resources>
+</document>

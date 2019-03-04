@@ -4,6 +4,7 @@
 target 'MerqueoTest' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  inhibit_all_warnings!
 
   # Pods for MerqueoTest
   pod 'RxSwift'
@@ -13,6 +14,8 @@ target 'MerqueoTest' do
   pod 'Moya-ObjectMapper/RxSwift'
   pod 'RxDataSources'
   pod 'Kingfisher'
+  pod 'RealmSwift'
+  pod 'XCDYouTubeKit'
 
   target 'MerqueoTestTests' do
     inherit! :search_paths

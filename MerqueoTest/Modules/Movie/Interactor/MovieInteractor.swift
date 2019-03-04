@@ -20,12 +20,19 @@ class MovieInteractor: MovieInteractorType {
     
     private let disposeBag = DisposeBag()
     weak var presenter: MoviePresenterToInteractor!
-    private let api = Api.httpServices
+    private let httpServices = Api.httpServices
+    private let localStorage = Api.localStorage
     
     func fetchMovieList() {
-        let observable = api.requestObject(target: TheMovieDBTarget.movieList, type: MovieList.self)
-            .map { (response: MovieList) -> [Movie] in
-                response.movies
+        let observable = httpServices.requestObject(target: TheMovieDBTarget.movieList, type: MovieList.self)
+            .do(onNext: { [weak self] (list: MovieList) in
+                self?.localStorage.save(object: list)
+            })
+            .catchError { [weak self] _ -> Observable<MovieList> in
+                guard let `self` = self else { return .never() }
+                return self.localStorage.requestArray(type: MovieList.self)
+                    .filter { !$0.isEmpty }
+                    .map { $0.first! }
             }
         presenter.showMovieListResult(observable)
     }

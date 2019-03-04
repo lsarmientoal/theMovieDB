@@ -15,11 +15,21 @@ protocol MovieViewType: class {
 
 class MovieListViewController: BaseViewController {
     
+    @IBOutlet private weak var collectionView: UICollectionView! {
+        didSet {
+            presenter.configureDataSource(withCollectionView: collectionView)
+        }
+    }
     var presenter: MoviePresenterToView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.loadMovieList()
+        title = "RECOMENDADOS"
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 

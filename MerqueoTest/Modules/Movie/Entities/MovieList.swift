@@ -7,15 +7,24 @@
 //
 
 import Foundation
+import RealmSwift
 import ObjectMapper
+import Differentiator
 
-struct MovieList: Mappable {
+class MovieList: Object, Mappable, IdentifiableType {
     
-    var movies: [Movie] = []
+    var movies = List<Movie>()
+    @objc dynamic var identity: Int = 1.hashValue
     
-    init?(map: Map) {}
+    required convenience init?(map: Map) {
+        self.init()
+    }
     
-    mutating func mapping(map: Map) {
-        movies <- map["results"]
+    override static func primaryKey() -> String? {
+        return "identity"
+    }
+    
+    func mapping(map: Map) {
+        movies <- (map["results"], ListTransform<Movie>())
     }
 }

@@ -11,4 +11,5 @@ import Foundation
 struct Api {
     
     static var httpServices: HttpServicesType = HttpServices()
+    static var localStorage: LocalStorageType = LocalStorage()
 }

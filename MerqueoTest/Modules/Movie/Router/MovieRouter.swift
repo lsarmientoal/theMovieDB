@@ -10,6 +10,7 @@ import Foundation
 
 protocol MovieRouterType: BaseRouterType {
     
+    func goToMovieDetail(_ movie: Movie)
 }
 
 class MovieRouter: MovieRouterType {
@@ -28,7 +29,13 @@ class MovieRouter: MovieRouterType {
         
         interactor.presenter = presenter
         
-        
         return viewController as! ViewType
+    }
+    
+    func goToMovieDetail(_ movie: Movie) {
+        
+        let movieDetailVC: MovieDetailViewController = MovieDetailRouter.createModule()
+        movieDetailVC.presenter.interactor.movieId = movie.id
+        pushViewController(movieDetailVC, animated: true)
     }
 }

@@ -16,6 +16,7 @@ enum TheMovieDBTarget: TargetType {
     case movieList
     case movieDetail(movieId: Int)
     case movieCredit(movieId: Int)
+    case getViedos(movieId: Int)
     case configuration
     
     var baseURL: URL {
@@ -27,13 +28,14 @@ enum TheMovieDBTarget: TargetType {
         case .movieList: return "/discover/movie"
         case .movieDetail(let movieId): return "/movie/\(movieId)"
         case .movieCredit(let movieId): return "/movie/\(movieId)/credits"
+        case .getViedos(let movieId): return "/movie/\(movieId)/videos"
         case .configuration : return "/configuration"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .movieList, .movieDetail, .movieCredit, .configuration:
+        case .movieList, .movieDetail, .movieCredit, .configuration, .getViedos:
             return .get
         }
     }
@@ -44,7 +46,7 @@ enum TheMovieDBTarget: TargetType {
     
     var task: Task {
         switch self {
-        case .movieList, .movieDetail, .movieCredit, .configuration:
+        case .movieList, .movieDetail, .movieCredit, .configuration, .getViedos:
             return .requestParameters(
                 parameters: ["api_key": apiKey],
                 encoding: URLEncoding.default
@@ -54,7 +56,7 @@ enum TheMovieDBTarget: TargetType {
     
     var headers: [String : String]? {
         switch self {
-        case .movieList, .movieDetail, .movieCredit, .configuration:
+        case .movieList, .movieDetail, .movieCredit, .configuration, .getViedos:
             return nil
         }
     }

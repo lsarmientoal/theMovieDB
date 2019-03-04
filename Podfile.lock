@@ -21,6 +21,11 @@ PODS:
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - Result (4.1.0)
   - RxAtomic (4.4.1)
   - RxCocoa (4.4.1):
@@ -31,15 +36,18 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
+  - XCDYouTubeKit (2.7.3)
 
 DEPENDENCIES:
   - Kingfisher
   - Moya-ObjectMapper/RxSwift
   - Moya/RxSwift
   - R.swift
+  - RealmSwift
   - RxCocoa
   - RxDataSources
   - RxSwift
+  - XCDYouTubeKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -51,11 +59,14 @@ SPEC REPOS:
     - ObjectMapper
     - R.swift
     - R.swift.Library
+    - Realm
+    - RealmSwift
     - Result
     - RxAtomic
     - RxCocoa
     - RxDataSources
     - RxSwift
+    - XCDYouTubeKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -66,12 +77,15 @@ SPEC CHECKSUMS:
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
 
-PODFILE CHECKSUM: 5ccc51c419d44c514e29447c23e6772531439b57
+PODFILE CHECKSUM: 749df33ae5054c4d35799f5d13fcad7d90bf24cd
 
 COCOAPODS: 1.6.0
